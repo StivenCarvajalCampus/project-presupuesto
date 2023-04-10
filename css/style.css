@@ -1,6 +1,13 @@
-.EgresosT{
-    color: red;
+#container{
+    background-image: url(../img/fondo1.jpg) !important;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25rem;
+    color: white;
 }
-.IngresosT{
-    color: green;
+
+span{
+    color: black;
 }
+

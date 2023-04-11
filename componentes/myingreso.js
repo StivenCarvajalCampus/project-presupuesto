@@ -1,12 +1,9 @@
 import config from "../storage/config.js";
 export default{
-    showingreso(){
-        config.myingreso(data);
-        Object.assign(this, JSON.parse(localStorage.getItem("myingreso")));
-        
+    showingreso({obj}){
         const ws = new Worker("storage/wsmyingreso.js", { type: "module" });
         
-        ws.postMessage({ module: "displayingreso", data: this.flujo });
+        ws.postMessage({ module: "displayingreso", data: obj });
 
         ws.addEventListener("message", (e) => {
            

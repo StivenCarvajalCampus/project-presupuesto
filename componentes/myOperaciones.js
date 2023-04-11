@@ -1,3 +1,4 @@
+import config from "../storage/config.js";
 let option = document.querySelector('#select_option')
 let task = document.querySelector('#val')
 let dinner = document.querySelector('#pre')
@@ -12,7 +13,7 @@ let cards_less_content = []
 export default {
         data:{ 
             expenses,
-            renevu
+            div_renevus_incomming 
         },
         
         render_local_cards(div, item) {
@@ -31,7 +32,7 @@ export default {
             cards_plus_content.push(e.data[1])
             config.setLocal('cards_plus', cards_plus_content)
             current_dinner.innerHTML = e.data[0]
-            renevu.innerHTML = "Ingreso " +  e.data[0]
+            div_renevus_incomming.innerHTML = "Ingreso " +  e.data[0]
             div_renevus_incomming.insertAdjacentHTML('beforeend', e.data[1])
         })
     },

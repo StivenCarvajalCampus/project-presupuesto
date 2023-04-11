@@ -1,5 +1,6 @@
 {
     "conventionalCommits.scopes": [
         "cambios"
-    ]
+    ],
+    "liveServer.settings.port": 5502
 }

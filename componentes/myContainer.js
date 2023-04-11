@@ -1,12 +1,9 @@
-import config from "../storage/config.js";
+/*import config from "../storage/config.js";
 
 export default {
     showHeader() {
         config.datamyContainer();
         Object.assign(this, JSON.parse(localStorage.getItem("myContainer")));
-        
-
-        localStorage.setItem("myContainer", array_string)
         
         const ws = new Worker("storage/wsMyContainer.js", { type: "module" });
         ws.postMessage({ module: "showMyContainer", data: this.datos});
@@ -21,4 +18,4 @@ export default {
     }
 
 
-}
+}*/

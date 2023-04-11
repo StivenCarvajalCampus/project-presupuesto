@@ -1,5 +1,6 @@
-import myContainer from "./componentes/myContainer.js";
-import myOperaciones from "./componentes/myOperaciones.js";
 
-myContainer.showHeader();
+import myOperaciones from "./componentes/myOperaciones.js";
+myOperaciones.render_local_cards(operaciones.data.expenses, 'cards_plus')
+myOperaciones.render_local_cards(operaciones.data.renevu, 'cards_less')
+//myContainer.showHeader();
 myOperaciones.render_operation();
